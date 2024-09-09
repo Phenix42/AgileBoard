@@ -1,0 +1,150 @@
+/* General Page Layout */
+.backlog-page {
+  padding: 20px;
+}
+
+.backlog-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.new-task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.new-task-input,
+.new-task-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-task-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.new-task-button:hover {
+  background-color: #2980b9;
+}
+
+/* Task Columns */
+.task-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.column h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Task Card Styling */
+.task-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #8575e0;
+  transition: background-color 0.3s ease;
+}
+
+.task-card:hover {
+  background-color: #f9f9f9;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-type,
+.task-priority {
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.task-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.task-points {
+  font-weight: bold;
+}
+
+/* Dynamic Type Colors */
+.task-type.task {
+  background-color: #3498db;
+  color: white;
+}
+
+.task-type.story {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.task-type.bug {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Dynamic Priority Colors */
+.task-priority.low {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.task-priority.medium {
+  background-color: #e67e22;
+  color: white;
+}
+
+.task-priority.high {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.task-priority.critical {
+  background-color: #c0392b;
+  color: white;
+}
+.task-number {
+  font-size: 14px;
+  color: #000000;
+  margin-left: 10px;
+}

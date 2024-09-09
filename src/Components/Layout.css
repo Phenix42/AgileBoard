@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f5f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative; /* Needed for positioning search box */
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 1.25em;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+  }
+  
+  /* Search box container */
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    display: none; /* Hidden by default */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  .search-container.open .search-input {
+    display: block; /* Show search input when open */
+  }
+  
+  .search-container.open .icon {
+    margin-left: 10px; /* Add margin to the left when search box is open */
+  }
+  
+  .close-search {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .task-modal {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .task-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-input, .modal-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

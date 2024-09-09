@@ -1,0 +1,150 @@
+.project-management {
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  
+  .board {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-task-form {
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .new-task-input, .new-task-select, .new-task-button {
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #dfe1e6;
+    outline: none;
+  }
+  
+  .new-task-input:focus, .new-task-select:focus {
+    border-color: #0052cc;
+  }
+  
+  .new-task-button {
+    background-color: #0052cc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .new-task-button:hover {
+    background-color: #0065ff;
+  }
+  
+  .columns {
+    display: flex;
+    gap: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .column {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .task-card {
+    background-color: #f4f5f7;
+    padding: 1rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .task-card:hover {
+    background-color: #ebecf0;
+  }
+  
+  .task-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .task-more-icon {
+    cursor: pointer;
+  }
+  
+  .task-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-type {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .task-type.task {
+    background-color: #dfe1e6;
+  }
+  
+  .task-type.story {
+    background-color: #0065ff;
+    color: white;
+  }
+  
+  .task-type.bug {
+    background-color: #ff5630;
+    color: white;
+  }
+  
+  .task-priority {
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .task-priority.low {
+    background-color: #dfe1e6;
+  }
+  
+  .task-priority.medium {
+    background-color: #ffc400;
+  }
+  
+  .task-priority.high {
+    background-color: #ffab00;
+  }
+  
+  .task-priority.critical {
+    background-color: #ff5630;
+    color: white;
+  }
+  
+  .task-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #6b778c;
+  }
+  
